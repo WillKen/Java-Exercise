@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class No_4 {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner in =new Scanner(System.in);
+        int a=in.nextInt();
+        int total=a;
+        int num=0;
+        for(int i=0;i<=total/100000000;i++) {
+        	for(int j=0;j<=(total-100000000*i)/500000;j++) {
+        		for(int k=0;k<=(total-100000000*i-500000*j)/200000;k++) {
+        			for(int q=0;q<=(total-100000000*i-500000*j-200000*k)/100000;q++) {
+        				for(int w=0;w<=(total-100000000*i-500000*j-200000*k-100000*q)/500;w++) {
+        					for(int e=0;e<=(total-100000000*i-500000*j-200000*k-100000*q-500*w)/200;e++) {
+        						for(int r=0;r<=(total-100000000*i-500000*j-200000*k-100000*q-500*w-200*e)/100;r++) {
+        							for(int t=0;t<=(total-100000000*i-500000*j-200000*k-100000*q-500*w-200*e-r)/5000;t++) {
+        								for(int y=0;y<=(total-100000000*i-500000*j-200000*k-100000*q-500*w-200*e-r-5000*t)/2000;y++) {
+        									for(int u=0;u<=(total-100000000*i-500000*j-200000*k-100000*q-500*w-200*e-r-5000*t-2000*y)/1000;u++) {
+        										for(int p=0;p<=(total-100000000*i-500000*j-200000*k-100000*q-500*w-200*e-r-5000*t-2000*y-1000*u)/500;p++) {
+        											if(total==i*100000000+j*500000+k*200000+q*100000+w*500+e*200+r+t*5000+y*2000+u*1000+p*500) {
+        												num++;
+        											}
+        										}
+        									}
+        								}
+        							}
+        						}
+        					}
+        				}
+        			}
+        		}
+        	}
+        }
+        System.out.println(num);
+	}
+	
+}
